@@ -1,0 +1,132 @@
+13479@BMayer MINGW64 ~/lcmbadbm (gradleize)
+$ gradle clean build --info
+Initialized native services in: C:\Users\13479\.gradle\native
+Initialized jansi services in: C:\Users\13479\.gradle\native
+Received JVM installation metadata from 'C:\Users\13479\Desktop\jdk-19': {JAVA_HOME=C:\Users\13479\Desktop\jdk-19, JAVA_VERSION=19.0.2, JAVA_VENDOR=Oracle Corporation, RUNTIME_NAME=Java(TM) SE Runtime Environment, RUNTIME_VERSION=19.0.2+7-44, VM_NAME=Java HotSpot(TM) 64-Bit Server VM, VM_VERSION=19.0.2+7-44, VM_VENDOR=Oracle Corporation, OS_ARCH=amd64}
+Found daemon DaemonInfo{pid=17936, address=[18bad6cc-1276-43eb-89e9-eff835e5c7a2 port:50399, addresses:[/127.0.0.1]], state=Idle, lastBusy=1678390078955, context=DefaultDaemonContext[uid=b6ebdb8b-bcb5-47d7-87ed-41c948849b14,javaHome=C:\Users\13479\.jdks\corretto-17.0.6,daemonRegistryDir=C:\Users\13479\.gradle\daemon,pid=17936,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=windows-1252,-Duser.country=US,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+Java home is different.
+Wanted: DefaultDaemonContext[uid=null,javaHome=C:\Users\13479\Desktop\jdk-19,daemonRegistryDir=C:\Users\13479\.gradle\daemon,pid=5412,idleTimeout=null,priority=NORMAL,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+Actual: DefaultDaemonContext[uid=b6ebdb8b-bcb5-47d7-87ed-41c948849b14,javaHome=C:\Users\13479\.jdks\corretto-17.0.6,daemonRegistryDir=C:\Users\13479\.gradle\daemon,pid=17936,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=windows-1252,-Duser.country=US,-Duser.language=en,-Duser.variant]
+
+  Looking for a different daemon...
+Found daemon DaemonInfo{pid=7664, address=[ac383f7d-7d1c-4345-8779-6d92e24ec247 port:50432, addresses:[/127.0.0.1]], state=Idle, lastBusy=1678390227032, context=DefaultDaemonContext[uid=55f171d9-e830-4c6f-8b1b-b7ea7b87f22d,javaHome=C:\Users\13479\.jdks\openjdk-19.0.1,daemonRegistryDir=C:\Users\13479\.gradle\daemon,pid=7664,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=windows-1252,-Duser.country=US,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+Java home is different.
+Wanted: DefaultDaemonContext[uid=null,javaHome=C:\Users\13479\Desktop\jdk-19,daemonRegistryDir=C:\Users\13479\.gradle\daemon,pid=5412,idleTimeout=null,priority=NORMAL,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+Actual: DefaultDaemonContext[uid=55f171d9-e830-4c6f-8b1b-b7ea7b87f22d,javaHome=C:\Users\13479\.jdks\openjdk-19.0.1,daemonRegistryDir=C:\Users\13479\.gradle\daemon,pid=7664,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=windows-1252,-Duser.country=US,-Duser.language=en,-Duser.variant]
+
+  Looking for a different daemon...
+The client will now receive all logging from the daemon (pid: 5152). The daemon log file: C:\Users\13479\.gradle\daemon\8.0.2\daemon-5152.out.log
+Starting 10th build in daemon [uptime: 23 mins 8.253 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 17% of 384 MiB]
+Using 16 worker leases.
+Now considering [C:\Users\13479\lcmbadbm] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file 'C:\Users\13479\lcmbadbm\settings.gradle'.
+Projects loaded. Root project using build file 'C:\Users\13479\lcmbadbm\build.gradle'.
+Included projects: [root project 'lcmbadbm', project ':lib']
+
+> Configure project :
+Evaluating root project 'lcmbadbm' using build file 'C:\Users\13479\lcmbadbm\build.gradle'.
+
+> Configure project :lib
+Evaluating project ':lib' using build file 'C:\Users\13479\lcmbadbm\lib\build.gradle'.
+All projects evaluated.
+Task name matched 'clean'
+Task name matched 'build'
+Selected primary task 'clean' from project :
+Selected primary task 'build' from project :
+The configuration :lib:mainSourceElements is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration :lib:testResultsElementsForTest is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+Tasks to be executed: [task ':lib:clean', task ':lib:compileJava', task ':lib:processResources', task ':lib:classes', task ':lib:jar', task ':lib:assemble', task ':lib:compileTestJava', task ':lib:processTestResources', task ':lib:testClasses', task ':lib:test', task ':lib:check', task ':lib:build']
+Tasks that were excluded: []
+Resolve mutations for :lib:clean (Thread[#337,Execution worker,5,main]) started.
+:lib:clean (Thread[#349,Execution worker Thread 13,5,main]) started.
+destroyer locations for task group 0 (Thread[#339,Execution worker Thread 3,5,main]) started.
+
+> Task :lib:clean
+Caching disabled for task ':lib:clean' because:
+  Build cache is disabled
+Task ':lib:clean' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Resolve mutations for :lib:compileJava (Thread[#349,Execution worker Thread 13,5,main]) started.
+:lib:compileJava (Thread[#349,Execution worker Thread 13,5,main]) started.
+
+> Task :lib:compileJava
+Caching disabled for task ':lib:compileJava' because:
+  Build cache is disabled
+Task ':lib:compileJava' is not up-to-date because:
+  Output property 'destinationDirectory' file C:\Users\13479\lcmbadbm\lib\build\classes\java\main has been removed.
+  Output property 'destinationDirectory' file C:\Users\13479\lcmbadbm\lib\build\classes\java\main\edu has been removed.
+  Output property 'destinationDirectory' file C:\Users\13479\lcmbadbm\lib\build\classes\java\main\edu\touro has been removed.
+  Output property 'options.generatedSourceOutputDirectory' file C:\Users\13479\lcmbadbm\lib\build\generated\sources\annotationProcessor\java\main has been removed.
+The input changes require a full rebuild for incremental task ':lib:compileJava'.
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain 'C:\Users\13479\Desktop\jdk-19'.
+Compiling with JDK Java compiler API.
+Note: C:\Users\13479\lcmbadbm\lib\src\main\java\edu\touro\mco152\bm\Util.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Class dependency analysis for incremental compilation took 0.109 secs.
+Created classpath snapshot for incremental compilation in 0.017 secs.
+Resolve mutations for :lib:processResources (Thread[#349,Execution worker Thread 13,5,main]) started.
+:lib:processResources (Thread[#349,Execution worker Thread 13,5,main]) started.
+
+> Task :lib:processResources
+Caching disabled for task ':lib:processResources' because:
+  Build cache is disabled
+Task ':lib:processResources' is not up-to-date because:
+  Output property 'destinationDir' file C:\Users\13479\lcmbadbm\lib\build\resources\main has been removed.
+  Output property 'destinationDir' file C:\Users\13479\lcmbadbm\lib\build\resources\main\META-INF has been removed.
+  Output property 'destinationDir' file C:\Users\13479\lcmbadbm\lib\build\resources\main\META-INF\persistence.xml has been removed.
+Resolve mutations for :lib:classes (Thread[#349,Execution worker Thread 13,5,main]) started.
+:lib:classes (Thread[#349,Execution worker Thread 13,5,main]) started.
+
+> Task :lib:classes
+Skipping task ':lib:classes' as it has no actions.
+Resolve mutations for :lib:jar (Thread[#350,Execution worker Thread 14,5,main]) started.
+:lib:jar (Thread[#350,Execution worker Thread 14,5,main]) started.
+
+> Task :lib:jar
+Caching disabled for task ':lib:jar' because:
+  Build cache is disabled
+Task ':lib:jar' is not up-to-date because:
+  Output property 'archiveFile' file C:\Users\13479\lcmbadbm\lib\build\libs\badbm.jar has been removed.
+Resolve mutations for :lib:assemble (Thread[#350,Execution worker Thread 14,5,main]) started.
+:lib:assemble (Thread[#341,Execution worker Thread 5,5,main]) started.
+
+> Task :lib:assemble
+Skipping task ':lib:assemble' as it has no actions.
+Resolve mutations for :lib:compileTestJava (Thread[#341,Execution worker Thread 5,5,main]) started.
+:lib:compileTestJava (Thread[#347,Execution worker Thread 11,5,main]) started.
+
+> Task :lib:compileTestJava NO-SOURCE
+Skipping task ':lib:compileTestJava' as it has no source files and no previous output files.
+Resolve mutations for :lib:processTestResources (Thread[#347,Execution worker Thread 11,5,main]) started.
+:lib:processTestResources (Thread[#347,Execution worker Thread 11,5,main]) started.
+
+> Task :lib:processTestResources NO-SOURCE
+Skipping task ':lib:processTestResources' as it has no source files and no previous output files.
+Resolve mutations for :lib:testClasses (Thread[#347,Execution worker Thread 11,5,main]) started.
+:lib:testClasses (Thread[#347,Execution worker Thread 11,5,main]) started.
+
+> Task :lib:testClasses UP-TO-DATE
+Skipping task ':lib:testClasses' as it has no actions.
+Resolve mutations for :lib:test (Thread[#347,Execution worker Thread 11,5,main]) started.
+:lib:test (Thread[#347,Execution worker Thread 11,5,main]) started.
+
+> Task :lib:test NO-SOURCE
+Skipping task ':lib:test' as it has no source files and no previous output files.
+Resolve mutations for :lib:check (Thread[#347,Execution worker Thread 11,5,main]) started.
+:lib:check (Thread[#347,Execution worker Thread 11,5,main]) started.
+
+> Task :lib:check UP-TO-DATE
+Skipping task ':lib:check' as it has no actions.
+Resolve mutations for :lib:build (Thread[#337,Execution worker,5,main]) started.
+:lib:build (Thread[#347,Execution worker Thread 11,5,main]) started.
+
+> Task :lib:build
+Skipping task ':lib:build' as it has no actions.
+
+BUILD SUCCESSFUL in 5s
+4 actionable tasks: 4 executed
+Watched directory hierarchies: [C:\Users\13479\lcmbadbm]
