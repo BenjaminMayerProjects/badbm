@@ -8,9 +8,22 @@
 
 plugins {
     // Apply the java-library plugin for API and implementation separation.
-    id 'java-library'
     id 'java'
+    id 'java-library'
 }
+
+jar {
+
+    manifest {
+        attributes 'Main-Class': 'edu.touro.mco152.bm.App'
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    archiveFileName = "badbm.jar"
+}
+
 
 repositories {
     // Use Maven Central for resolving dependencies.
